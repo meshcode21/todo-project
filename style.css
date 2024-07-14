@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.container {
+    width: 50vw;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+}
+
+.container ul button {
+    margin: 0 5px;
+    font-size: 1rem;
+    ;
+}
+
+ul li {
+    box-shadow: 0 0 3px rgb(114, 114, 114);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+ul li p {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.container h2 {
+    font-weight: 500;
+}
+
+.editBox {
+    position: absolute;
+    top: 0;
+    background-color: rgba(104, 104, 104, 0.596);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.editBox .container {
+    background-color: white;
+}
+
+#close {
+    float: right;
+    border: 2px solid rgb(124, 124, 124);
+    color: rgb(124, 124, 124);
+    padding: 0 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
