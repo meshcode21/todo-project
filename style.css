@@ -18,7 +18,7 @@ h1 {
 }
 
 .container {
-    width: 50vw;
+    width: max(50vw, 450px);
     margin: 10px auto;
     padding: 10px;
 }
@@ -31,7 +31,6 @@ button {
 .container ul button {
     margin: 0 5px;
     font-size: 1rem;
-    ;
 }
 
 ul li {
@@ -75,4 +74,13 @@ ul li p {
     padding: 0 9px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 90vw
+    }
+    .container ul button {
+        font-size: 0.7rem;
+    }
 }
