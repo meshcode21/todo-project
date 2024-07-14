@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+        }
+        
+        h1 {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-family: "Playwrite VN", cursive;
+            font-weight: 900;
+            font-size: 2rem;
+            font-style: italic;
+            /* text-decoration: underline; */
+            /* text-underline-offset: 15px; */
+        }
+        
+        .container {
+            width: 50vw;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        
+        input,
+        button {
+            padding: 10px;
+        }
+        
+        .container ul button {
+            margin: 0 5px;
+            font-size: 1rem;
+            ;
+        }
+        
+        ul li {
+            box-shadow: 0 0 3px rgb(114, 114, 114);
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        
+        ul li p {
+            width: 100%;
+            padding-left: 10px;
+        }
+        
+        .container h2 {
+            font-weight: 500;
+        }
+        
+        .editBox {
+            position: absolute;
+            top: 0;
+            background-color: rgba(104, 104, 104, 0.596);
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .editBox .container {
+            background-color: white;
+        }
+        
+        #close {
+            float: right;
+            border: 2px solid rgb(124, 124, 124);
+            color: rgb(124, 124, 124);
+            padding: 0 9px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <div class="container">
+        <h2>Items</h2>
+        <form id="addForm" style="display: flex;">
+            <input type="text" id="newItem" style="width: 100%;">
+            <button id="addBtn" type="submit" style="margin-left: 10px;" disabled>Add</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>List of Todo</h2>
+        <ul id="list">
+        </ul>
+    </div>
+    <div class="editBox" id="editBox">
+        <div class="container">
+            <span id="close">x</span>
+            <h2>Edit Item</h2>
+            <form id="editForm" style="display: flex; margin-top: 10px;">
+                <input type="text" id="editField" style="width: 100%;">
+                <button id="editBtn" type="submit" style="margin-left: 10px;">Edit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
